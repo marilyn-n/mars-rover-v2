@@ -1,4 +1,3 @@
-// Rover Object Goes Here
 // ====================== iteration 1
 
 let rover = {
@@ -80,11 +79,10 @@ const goForward = () => {
        rover.x = rover.x +1;
        break;
    }
-  console.log('goForward was called \n current coordinates are  \n x: ' + rover.x + '\n y: ' + rover.y);
+  alert('goForward was called \n current coordinates are  \n x: ' + rover.x + '\n y: ' + rover.y);
 };
 
-// ====================== Iteration 4 | Commands
-// ====================== Iteration 5 | Tracking
+// ====================== Iteration 4 & 5 | Commands & Tracking
 
 const executeCommands = (commands) => {
   for(var index = 0; index < commands.length; index++){
@@ -113,7 +111,7 @@ const executeCommand = (command) => {
   }
 };
 
-// ====================== Bonus | Other Suggested Features (Movin Backwards)
+// ====================== (Moving Backward)
 const moveBackward = (rover) => {
   console.log("moveBackward was called");
   console.log(`The current co-ordinates are \n x: ${rover.x} \n y: ${rover.y} \n`);
@@ -133,5 +131,5 @@ const moveBackward = (rover) => {
       rover.x = rover.x + 1;
       break;
   }
-  console.log(`The new co-ordinates are \n x: ${rover.x} \n y: ${rover.y} \n`);
+  alert(`The new co-ordinates are \n x: ${rover.x} \n y: ${rover.y} \n`);
 };
